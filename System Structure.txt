@@ -1,0 +1,41 @@
+Shop System {
+	Sell packs of cards based on RNG
+	Sell cards for 75% of base value
+	
+	Player Shop System (similar to steam marketplace) {
+		Sell owned cards for money, rendering the card unusable
+		Purchase player owned cards for money
+	}
+}
+
+List<Game> {
+	Player[1 to 2]	{
+		PlayerID
+		Life
+		CardPile {
+			CardID
+		}
+		HeldCards {
+			CardID
+		}
+		Cards on the Board {
+			Health
+			Attack
+			Script
+		}
+	}
+}
+
+Class {
+	String Class
+	String Type
+}
+
+Accounts {
+	Decks -> 1 to 30 cards
+	Generic Card Pile (cannot be used as a deck) -> 1 to Infinity cards
+		if no decks are set, take cards from the generic card pile {
+		
+		amount
+	}
+}

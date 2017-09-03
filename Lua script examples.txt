@@ -1,0 +1,46 @@
+// Anytime something is done.
+for (int index = 0; index < 2; index++) {
+	for (int i = 0; i < player[index].playingfilendcards.length; i++) {
+		var card = player[index].playingfieldcards[i];
+		if (card.dying || card.attacked || card.summoned || card.passive) {
+			if (card.script.length > 0) {
+				foreach (var line in card.script) {
+					Lua.Run(card.script.replace("playerindex", index)
+						.replace("cardindex", i.tostring()
+						.replace("Attacked", card.attacked)
+					.replace("Summoned", card.summoned")
+					.replace("Dying", card.dying)
+				);
+			}
+			card.dying = false
+			card.attacked = false
+			card.summoned = false
+			card.handsummoned
+		}
+	}
+}
+
+if (Attacked) then
+	HealHero(2)
+end
+
+if (Dying) then
+	Summon(gameindex, playerindex, cardindex)
+	HealHero(gameindex, 8)
+	HealAllMinion(8)
+	HealAll(8)
+	// Total, amount per burst
+	HealRandomMinions(8, 3)
+	HealRandom(8, 3)
+	CustomScript(gameindex, playerindex, 1)
+end
+
+if (Summoned) then
+	DamageEnemy(8)
+	DamageAllEnemyMinions(8)
+	DamageAll(8)
+	DamageRandomEnemyMinions(8, 3)
+	DamageEnemyRandom(8, 3)
+	EnableAttack(1)
+	BuffMinions(8, 1)
+end

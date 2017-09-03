@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Host>127.0.0.1</Host>
+  <Port>7001</Port>
+  <Font>Augusta</Font>
+  <Username>test</Username>
+  <Password />
+  <RememberPassword>false</RememberPassword>
+  <Music>true</Music>
+  <musicVolume>1</musicVolume>
+  <Sound>true</Sound>
+  <soundVolume>1</soundVolume>
+</Settings>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Account xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Username>noob</Username>
+  <DisplayName>noob</DisplayName>
+  <Password>&lt;.6PR</Password>
+  <Money>0</Money>
+  <WinCount>0</WinCount>
+  <LossCount>0</LossCount>
+  <State>1</State>
+  <Game>
+    <GameID>0</GameID>
+    <PlayerID>0</PlayerID>
+  </Game>
+</Account>

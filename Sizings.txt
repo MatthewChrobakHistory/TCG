@@ -1,0 +1,10 @@
+960 width
+640 height
+
+if each card is 125f, this means 7.68 cards can exist on each level horizontally.
+.68 * 960 is almost 1000 * .68 which is 680. 680 / 7 is roughly 90 spacings between each card.
+
+if each card is 175f, not enough space exists in a 640 area for 4 vertical layers of cards.
+Unless, we remove the bottom half of cards held in your hand with the bottom half off screen.
+This would mean 640 / 3, instead of 640 / 4. In this case, 38 spacings would exist between each
+vertical layer.

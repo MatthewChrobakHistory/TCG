@@ -1,0 +1,36 @@
+Day 1 - July 19, 2015
+	Established the project using the 2dMPE framework.
+Day 2 - July 20, 2015
+	Created a primative login screen.
+	Users can now register accounts, and log into those accounts.
+	MessageBoxes can be sent from the server to the client to convey important information.
+Day 3 - July 21, 2015
+	Users can log out to the login screen.
+	Optimized the client's interface system.
+Day 4 - July 22, 2015
+	Obligatory paid-vacation
+Day 5 - July 23, 2015
+	Made general client/server optimiztions.
+Day 6 - July 24, 2015
+	Added a STATE_WAITING for waiting for a match with a cancel button.
+	Players can now be matched up into games.
+	Applied a patch for a game-breaking bug regarding the network.
+	Self and enemy data is send and recognized properly by the server and client.
+	Added Lua scripting support. Opted instead of Python because:
+		Lack of clear documentation regarding support with binary files.
+		With the documentation I did find, I was unable to find any way to decalre Namespaces and interaction with Python functions and C# methods.
+	Established a variable replacing system for the scripting system to ensure that packets can be sent and received by the right people.
+Day 7 - August 4, 2015
+	[CLIENT] Ensure that on loading card data, their surface is stored by GetSurfaceIndex and are not rendered by GetSurface.
+	[CLIENT] Try and optimize the GUI system so that it works based on GetSurfaceIndex and not GetSurface.
+	[SERVER] Fix up encryption so that the encrypted character is affected by the current character index in relation to the input.length (0 to input.length; count++ on every encrypt) so that re-occuring characters are not blatantly obvious. Ensure that the decryption method takes this into account.
+Day 8 - August 10, 2015
+	Cards are now sent from the sever to the client, and no cache files are needed to be sent to the client via the server.
+	Fixed up the UI system for the cards so it is easier to tell where cards are placed horizontally.
+	Implemented a turn based system. Cards cannot be moved unless they are in your hand, and it is your turn.
+
+Planned Progress
+	
+	[SERVER] Optimize the connection list. Remove ClientConnections and Player instances if they're at the top of the list, and list all in between who disconnect as free space. Ensure that on the async ConnectCallback method callback, the server looks for the next free instance slot returning a pre-existing free slot index, or a newly added instance index.
+	[SERVER] Either ensure that all UTF-8 characters are supported, or insert more commonly accepted UTF-8 characters.
+	[SERVER/CLIENT] Add a spectating list for games.

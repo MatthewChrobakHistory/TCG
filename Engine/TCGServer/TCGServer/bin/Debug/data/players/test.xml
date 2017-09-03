@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Player xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Username>test</Username>
+  <DisplayName>test</DisplayName>
+  <Password>TRHT</Password>
+  <Money>0</Money>
+  <WinCount>0</WinCount>
+  <LossCount>0</LossCount>
+  <Game>
+    <GameID>-1</GameID>
+    <PlayerID>-1</PlayerID>
+  </Game>
+</Player>
